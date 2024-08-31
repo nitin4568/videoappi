@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="124dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="114dp"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/bat" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:paddingLeft="13dp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edt_email"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textNoSuggestions"
+        android:hint="Password"
+        android:paddingLeft="13dp" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/btn_background"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Login"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_background"
+        android:text="signup"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bellowlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Login"
+        android:layout_marginTop="225dp"
+        android:text="New member to signup alredy member to login"
+        android:layout_centerHorizontal="true"
+       android:textColor="@color/white"
+       android:textSize="16sp"/>
+</RelativeLayout>
+
